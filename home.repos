@@ -3,7 +3,11 @@ repositories:
     type: git
     url: https://github.com/mgonzs13/yolo_ros.git
     version: 4.2.0
-  grasp:
+  home_grasp:
     type: git
     url: git@github.com:HCIS-Lab/home-grasp.git
+    version: main
+  home_interfaces:
+    type: git
+    url: git@github.com:HCIS-Lab/home-interfaces.git
     version: main
