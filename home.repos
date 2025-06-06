@@ -11,3 +11,7 @@ repositories:
     type: git
     url: git@github.com:HCIS-Lab/home-interfaces.git
     version: main
+  home_nlp:
+    type: git
+    url: git@github.com:HCIS-Lab/home-nlp.git
+    version: main

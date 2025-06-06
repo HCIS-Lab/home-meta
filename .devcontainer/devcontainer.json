@@ -1,13 +1,16 @@
 {
-    "name": "ROS 2 Humble Dev Container", // TODO
+    "name": "ROS 2 Humble Dev Container",
     "image": "lnfu/ros2:humble-desktop",
     "remoteUser": "ubuntu",
     "workspaceFolder": "/home/ubuntu/ros2_ws",
     "workspaceMount": "source=${localWorkspaceFolder},target=/home/ubuntu/ros2_ws,type=bind",
     "runArgs": [
-        "--network=host", // TODO
-        "--gpus=all"
+        "--network=host",
+        "--gpus=all",
+        "--device=/dev/snd:/dev/snd",
+        "--group-add=audio"
     ],
+    "postCreateCommand": "bash ./scripts/setup.sh",
     "customizations": {
         "vscode": {
             "extensions": [
