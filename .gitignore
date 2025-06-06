@@ -12,3 +12,4 @@ build
 install
 log
 src
+.vscode

@@ -37,3 +37,18 @@ colcon build
 You can use the provided DevContainer (`.devcontainer/`) to set up a consistent development environment.
 
 This repo serves only as a meta layer; all main code lives in the sub-repositories.
+
+```json
+// .vscode/settings.json
+{
+    "python.analysis.extraPaths": [
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "/home/ubuntu/ros2_ws/install/yolo_ros/lib/python3.10/site-packages",
+        "/home/ubuntu/ros2_ws/install/yolo_msgs/local/lib/python3.10/dist-packages",
+        "/home/ubuntu/ros2_ws/install/home_nlp/lib/python3.10/site-packages",
+        "/home/ubuntu/ros2_ws/install/home_interfaces/local/lib/python3.10/dist-packages",
+        "/home/ubuntu/ros2_ws/install/home_grasp/lib/python3.10/site-packages",
+    ]
+}
+```
