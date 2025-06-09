@@ -15,4 +15,4 @@ pip install --upgrade -r src/home_nlp/requirements.txt
 rosdep update
 sudo apt-get update -y
 rosdep install --from-paths src --ignore-src --skip-keys=portaudio -r -y
-sudo apt-get install libportaudio2
+sudo apt-get install libportaudio2 -y

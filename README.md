@@ -24,11 +24,16 @@ cd ros2_ws
 mkdir -p src
 vcs import src < home.repos
 
+# python dependencies
 pip install -r src/yolo_ros/requirements.txt
+pip install -r src/home_nlp/requirements.txt
 
+# ros2 packages update
 rosdep update
 sudo apt update
 rosdep install --from-paths src --ignore-src -r -y
+
+# ros2 build packages
 colcon build
 ```
 
@@ -51,4 +56,17 @@ This repo serves only as a meta layer; all main code lives in the sub-repositori
         "/home/ubuntu/ros2_ws/install/home_grasp/lib/python3.10/site-packages",
     ]
 }
+```
+
+TODO: 整合到 repo: lnfu/ros_env
+
+cuda12+cudnn9
+
+```bash
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
+sudo apt-get update
+# sudo apt-get -y install cuda-toolkit-12-4
+sudo apt-get -y install cudnn-cuda-12
+sudo apt-get -y install cudnn
 ```
