@@ -9,12 +9,13 @@ It also includes setup scripts and development container configurations.
 
 This meta repo pulls in the following sub-projects:
 
-| Repository | URL | Branch |
-|------------|-----|--------|
-| **yolo_ros** | https://github.com/mgonzs13/yolo_ros.git | 4.2.0 |
-| **home_grasp** | https://github.com/HCIS-Lab/home-grasp.git | main |
-| **home_interfaces** | https://github.com/HCIS-Lab/home-interfaces.git | main |
-| **home_nlp** | https://github.com/HCIS-Lab/home-nlp.git | main |
+| Repository        | URL                                           | Branch | Description                                      |
+|-------------------|-----------------------------------------------|--------|--------------------------------------------------|
+| **home_bringup**  | https://github.com/HCIS-Lab/home-bringup      | main   | Stores ROS2 launch files for starting and managing ROS2 nodes |
+| **home_grasp**    | https://github.com/HCIS-Lab/home-grasp.git    | main   | Provides robot grasping functionality |
+| **home_interfaces** | https://github.com/HCIS-Lab/home-interfaces.git | main   | Defines custom ROS2 msg, srv, action for inter-node communication |
+| **home_nlp**      | https://github.com/HCIS-Lab/home-nlp.git      | main   | Manages speech-related functions, including microphone, ASR, and LLM nodes |
+| **yolo_ros**      | https://github.com/mgonzs13/yolo_ros.git      | 4.2.0  | YOLO implementation for ROS |
 
 ## Getting Started
 
