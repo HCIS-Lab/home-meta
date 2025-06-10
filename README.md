@@ -35,6 +35,9 @@ rosdep install --from-paths src --ignore-src -r -y
 
 # ros2 build packages
 colcon build
+
+# TODO
+chmod +x scripts/*
 ```
 
 ## Notes

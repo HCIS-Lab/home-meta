@@ -13,3 +13,4 @@ install
 log
 src
 .vscode
+**/__pycache__/
