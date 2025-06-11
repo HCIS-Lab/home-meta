@@ -22,23 +22,12 @@ This meta repo pulls in the following sub-projects:
 ```bash
 git clone git@github.com:HCIS-Lab/home-meta.git
 cd ros2_ws
-mkdir -p src
-vcs import src < home.repos
 
-# python dependencies
-pip install -r src/yolo_ros/requirements.txt
-pip install -r src/home_nlp/requirements.txt
-
-# ros2 packages update
-rosdep update
-sudo apt update
-rosdep install --from-paths src --ignore-src -r -y
-
-# ros2 build packages
-colcon build
-
-# TODO
 chmod +x scripts/*
+./script/setup.sh
+
+# Build ROS2 packages
+colcon build
 ```
 
 ## Notes

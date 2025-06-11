@@ -1,8 +1,8 @@
 repositories:
-  yolo_ros:
+  home_bringup:
     type: git
-    url: https://github.com/mgonzs13/yolo_ros.git
-    version: 4.2.0
+    url: git@github.com:HCIS-Lab/home-bringup.git
+    version: main
   home_grasp:
     type: git
     url: git@github.com:HCIS-Lab/home-grasp.git
@@ -15,3 +15,15 @@ repositories:
     type: git
     url: git@github.com:HCIS-Lab/home-nlp.git
     version: main
+  yolo_ros:
+    type: git
+    url: https://github.com/mgonzs13/yolo_ros.git
+    version: 4.2.0
+  BehaviorTree.CPP:
+    type: git
+    url: https://github.com/BehaviorTree/BehaviorTree.CPP.git
+    version: 4.6.2
+  BehaviorTree.ROS2:
+    type: git
+    url: https://github.com/BehaviorTree/BehaviorTree.ROS2.git
+    version: humble
