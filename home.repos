@@ -15,6 +15,10 @@ repositories:
     type: git
     url: git@github.com:HCIS-Lab/home-nlp.git
     version: main
+  home_tree:
+    type: git
+    url: git@github.com:HCIS-Lab/home-tree.git
+    version: main
   yolo_ros:
     type: git
     url: git@github.com:lnfu/yolo_ros.git
