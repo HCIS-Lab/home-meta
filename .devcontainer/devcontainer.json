@@ -20,5 +20,13 @@
                 "redhat.vscode-xml"
             ]
         }
+    },
+    "mounts": [
+        "type=bind,source=/run/user/1000/pulse/native,target=/tmp/pulse/native",
+        "type=bind,source=${localWorkspaceFolder}/.cache,target=/home/ubuntu/.cache",
+        "type=bind,source=${localWorkspaceFolder}/.local,target=/home/ubuntu/.local"
+    ],
+    "containerEnv": {
+        "PULSE_SERVER": "unix:/tmp/pulse/native"
     }
 }

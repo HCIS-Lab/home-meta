@@ -63,3 +63,8 @@ sudo apt-get update
 sudo apt-get -y install cudnn-cuda-12
 sudo apt-get -y install cudnn
 ```
+
+```bash
+mkdir -p .cache
+mkdir -p .local
+```
