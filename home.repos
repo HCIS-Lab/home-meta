@@ -23,6 +23,10 @@ repositories:
     type: git
     url: git@github.com:HCIS-Lab/home-speak.git
     version: main
+  home_navigation:
+    type: git
+    url: git@github.com:HCIS-Lab/home-navigation.git
+    version: main
   yolo_ros:
     type: git
     url: git@github.com:lnfu/yolo_ros.git

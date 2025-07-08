@@ -13,6 +13,12 @@ ros2 pkg create --build-type ament_cmake <package_name>
 
 reference: https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html
 
+## Publish a message via ROS2 CLI
+
+```bash
+ros2 topic pub --once /transcription std_msgs/msg/String '{data: "Hello"}'
+```
+
 ## Send action goal via ROS2 CLI
 
 ```bash
