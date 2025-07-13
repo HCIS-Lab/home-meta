@@ -17,3 +17,6 @@ src
 .cache
 .local
 .env
+.venv
+venvs
+venv
