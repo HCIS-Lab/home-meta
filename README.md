@@ -30,7 +30,7 @@ This meta repo pulls in the following sub-projects:
 ## Getting Started
 
 ```bash
-git clone git@github.com:HCIS-Lab/home-meta.git
+git clone git@github.com:HCIS-Lab/home-meta.git ros2_ws
 cd ros2_ws
 
 chmod +x scripts/*

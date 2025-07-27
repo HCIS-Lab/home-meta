@@ -27,4 +27,19 @@ ros2 action send_goal [action_name] [action_type] [goal_json] --feedback
 ros2 action send_goal /speak home_interfaces/action/Speak \
   '{sentence: "哈囉，好久不見"}' \
   --feedback
+
+
+
+ros2 action send_goal /grasp home_interfaces/action/Grasp "{
+  class_name: 'sports ball'
+}"
+
+ros2 action send_goal /grasp home_interfaces/action/Grasp "{
+  class_name: 'white bottle'
+}"
+
+```
+
+```
+ros2 launch stretch_core stretch_driver.launch.py
 ```
