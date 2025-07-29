@@ -1,8 +1,47 @@
 # Developing inside a Container
 
-You can use the provided DevContainer (`.devcontainer/`) to set up a consistent development environment.
+You can use the provided Dev Container configuration (`.devcontainer/`) to set up a consistent development environment.
 
-This repo serves only as a meta layer; all main code lives in the sub-repositories.
+## Prerequisites
+
+Make sure you have the following installed on your system:
+
+* Docker (ensure the Docker daemon is running)
+* Visual Studio Code
+* Remote Development Extension Pack
+
+## Steps to Use VS Code Dev Container
+
+### Clone the Repository
+
+```bash
+git clone git@github.com:HCIS-Lab/home-meta.git ros2_ws
+cd ros2_ws
+```
+
+### Prepare Local Directories
+
+Before opening the Dev Container, create the following directories to ensure proper caching and local storage:
+
+```bash
+mkdir -p .cache
+mkdir -p .local
+```
+
+### Open in VS Code
+
+* Launch VS Code and open the repository folder.
+* When prompted *"Reopen in Container"*, click **Yes**.
+* If not prompted, press `F1` → search for **Remote-Containers: Reopen in Container**.
+
+### Build and Start the Dev Container
+
+* VS Code will automatically build the container based on `.devcontainer/devcontainer.json` and attach to it.
+* The first build may take several minutes as it installs dependencies.
+
+## (Optional) Improve Python Autocompletion
+
+To improve Python autocompletion inside VS Code, you can add the following configuration to your local workspace `.vscode/settings.json`:
 
 ```json
 // .vscode/settings.json
@@ -19,20 +58,3 @@ This repo serves only as a meta layer; all main code lives in the sub-repositori
 }
 ```
 
-TODO: 整合到 repo: lnfu/ros_env
-
-cuda12+cudnn9
-
-```bash
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
-sudo dpkg -i cuda-keyring_1.1-1_all.deb
-sudo apt-get update
-# sudo apt-get -y install cuda-toolkit-12-4
-sudo apt-get -y install cudnn-cuda-12
-sudo apt-get -y install cudnn
-```
-
-```bash
-mkdir -p .cache
-mkdir -p .local
-```
