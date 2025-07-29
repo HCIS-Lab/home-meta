@@ -7,8 +7,8 @@ This approach prevents dependency conflicts between ROS 2 Python packages by all
 
 ## Example Workflow
 
-Below is an example of creating a dedicated venv for a package named `home_speak`.
-You can repeat the same steps for other packages by replacing `[package_name]` with your package folder name.
+Below are the instructions for creating a dedicated `venv`.
+You can repeat the same steps for other packages by replacing `[package_name]` with your package name.
 
 ```bash
 # 1. Create a virtual environment for your package
