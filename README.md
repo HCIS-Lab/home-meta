@@ -11,22 +11,6 @@ Monorepo for managing and building the **HCIS-Lab Home Robot Stack**.
 This repository mainly serves as the meta repository for pulling and building related sub-projects using `home.repos` and `vcs`.  
 It also includes setup scripts and development container configurations.
 
-## Sub-repositories
-
-This meta repo pulls in the following sub-projects:
-
-| Repository        | URL                                           | Branch | Description                                      |
-|-------------------|-----------------------------------------------|--------|--------------------------------------------------|
-| **home_bringup**      | https://github.com/HCIS-Lab/home-bringup          | main | Stores ROS2 launch files for starting and managing ROS2 nodes |
-| **home_interfaces**   | https://github.com/HCIS-Lab/home-interfaces.git   | main | Defines custom ROS2 msg, srv, action for inter-node communication |
-| **home_nlp**          | https://github.com/HCIS-Lab/home-nlp.git          | main | Manages speech-related functions, including microphone, ASR, and LLM nodes |
-| **home_grasp**        | https://github.com/HCIS-Lab/home-grasp.git        | main | Grasp action |
-| **home_speak**        | https://github.com/HCIS-Lab/home-speak.git        | main | Speak action |
-| **home_navigation**        | https://github.com/HCIS-Lab/home-navigation.git        | main | Navigate action |
-| **yolo_ros**          | https://github.com/lnfu/yolo_ros.git              | feature/image-compression | YOLO implementation for ROS |
-| **BehaviorTree.CPP**          | https://github.com/BehaviorTree/BehaviorTree.CPP.git              | 4.6.2 | Behavior tree C++ implementation |
-| **BehaviorTree.ROS2**          | https://github.com/BehaviorTree/BehaviorTree.ROS2.git              | humble | BehaviorTree.CPP ROS2 wrappers |
-
 ## Getting Started
 
 ```bash
@@ -42,5 +26,22 @@ colcon build
 
 ## Documentation
 
-- [ROS2 Basics](./docs/ros2_basics.md)
-- [Developing inside a Container](./docs/devcontainer.md)
+* [Developing inside a Container](./docs/devcontainer.md)
+* [Using Python Virtual Environments (`venv`) in ROS 2](./docs/ros2_venv.md)
+* [ROS2 Basics](./docs/ros2_basics.md)
+
+## Sub-repositories
+
+This meta repo pulls in the following sub-projects:
+
+| Repository        | URL                                           | Branch | Description                                      |
+|-------------------|-----------------------------------------------|--------|--------------------------------------------------|
+| **home_bringup**      | https://github.com/HCIS-Lab/home-bringup          | main | Stores ROS2 launch files for starting and managing ROS2 nodes |
+| **home_interfaces**   | https://github.com/HCIS-Lab/home-interfaces.git   | main | Defines custom ROS2 msg, srv, action for inter-node communication |
+| **home_nlp**          | https://github.com/HCIS-Lab/home-nlp.git          | main | Manages speech-related functions, including microphone, ASR, and LLM nodes |
+| **home_grasp**        | https://github.com/HCIS-Lab/home-grasp.git        | main | Grasp action |
+| **home_speak**        | https://github.com/HCIS-Lab/home-speak.git        | main | Speak action |
+| **home_navigation**        | https://github.com/HCIS-Lab/home-navigation.git        | main | Navigate action |
+| **yolo_ros**          | https://github.com/lnfu/yolo_ros.git              | feature/image-compression | YOLO implementation for ROS |
+| **BehaviorTree.CPP**          | https://github.com/BehaviorTree/BehaviorTree.CPP.git              | 4.6.2 | Behavior tree C++ implementation |
+| **BehaviorTree.ROS2**          | https://github.com/BehaviorTree/BehaviorTree.ROS2.git              | humble | BehaviorTree.CPP ROS2 wrappers |
