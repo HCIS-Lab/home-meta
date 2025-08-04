@@ -1,20 +1,12 @@
 repositories:
-  home_bringup:
-    type: git
-    url: git@github.com:HCIS-Lab/home-bringup.git
-    version: main
   home_interfaces:
     type: git
     url: git@github.com:HCIS-Lab/home-interfaces.git
     version: main
-  home_tree:
-    type: git
-    url: git@github.com:HCIS-Lab/home-tree.git
-    version: main
   home_nlp:
     type: git
     url: git@github.com:HCIS-Lab/home-nlp.git
-    version: main
+    version: 1.0.0
   home_grasp:
     type: git
     url: git@github.com:HCIS-Lab/home-grasp.git
