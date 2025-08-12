@@ -9,6 +9,8 @@ Monorepo for managing and building the **HCIS-Lab Home Robot Stack**.
 This repository mainly serves as the meta repository for pulling and building related sub-projects using `home.repos` and `vcs`.  
 It also includes setup scripts and development container configurations.
 
+![Architecture](docs/arch.svg)
+
 ## Getting Started
 
 ```bash
