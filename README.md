@@ -20,7 +20,6 @@ cd ros2_ws
 chmod +x scripts/*
 ./script/setup.sh
 
-# Build ROS2 packages
 colcon build
 ```
 
