@@ -20,14 +20,7 @@ cd ros2_ws
 chmod +x scripts/*
 ./script/setup.sh
 
-# Build ROS2 packages
-colcon build
-```
-
-```bash
-# TODO
-tmux start-server
-tmux source-file tmux.conf
+tmux start-server \; source-file tmux.conf
 ```
 
 ## Documentation
