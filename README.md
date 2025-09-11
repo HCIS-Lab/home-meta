@@ -24,6 +24,12 @@ chmod +x scripts/*
 colcon build
 ```
 
+```bash
+# TODO
+tmux start-server
+tmux source-file tmux.conf
+```
+
 ## Documentation
 
 * [Developing inside a Container](./docs/devcontainer.md)
