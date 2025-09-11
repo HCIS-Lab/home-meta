@@ -40,6 +40,7 @@ python3 -m colcon build \
   --base-paths src \
   --packages-select home_speak
 ```
+
 ## Example: `home_nlp`
 
 ```bash
@@ -51,6 +52,19 @@ python3 -m colcon build \
   --event-handlers console_cohesion+ \
   --base-paths src \
   --packages-select home_nlp
+```
+
+## Example: `home_articulate`
+
+```bash
+python3 -m venv venvs/home_articulate --system-site-packages
+. venvs/home_articulate/bin/activate
+python3 -m pip install -r src/home_articulate/requirements.txt
+python3 -m colcon build \
+  --symlink-install \
+  --event-handlers console_cohesion+ \
+  --base-paths src \
+  --packages-select home_articulate
 ```
 
 
