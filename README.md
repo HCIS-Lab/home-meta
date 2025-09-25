@@ -18,7 +18,7 @@ git clone git@github.com:HCIS-Lab/home-meta.git ros2_ws
 cd ros2_ws
 
 chmod +x scripts/*
-./script/setup.sh
+./scripts/setup.sh
 
 tmux start-server \; source-file tmux.conf
 ```
@@ -39,7 +39,7 @@ This meta repo pulls in the following sub-projects:
 | [home_grasp](https://github.com/HCIS-Lab/home-grasp.git) | main | Grasp action |
 | [home_speak](https://github.com/HCIS-Lab/home-speak.git) | main | Speak action |
 | [home_navigation](https://github.com/HCIS-Lab/home-navigation.git) | main | Navigate action |
-| [yolo_ros](https://github.com/lnfu/yolo_ros.git) | feature/image-compression | YOLO implementation for ROS |
+| [yolo_ros](https://github.com/HCIS-Lab/yolo_ros.git) | feature/image-compression | YOLO implementation for ROS |
 | [BehaviorTree.CPP](https://github.com/BehaviorTree/BehaviorTree.CPP.git) | 4.6.2 | Behavior tree C++ implementation |
 | [BehaviorTree.ROS2](https://github.com/BehaviorTree/BehaviorTree.ROS2.git) | humble | BehaviorTree.CPP ROS2 wrappers |
 | [home_interfaces](https://github.com/HCIS-Lab/home-interfaces.git) | main | Defines custom ROS2 msg, srv, action for inter-node communication |
