@@ -38,7 +38,7 @@ This meta repo pulls in the following sub-projects:
 | [home_nlp](https://github.com/HCIS-Lab/home-nlp.git) | 1.0.0 | Manages speech-related functions, including microphone, ASR, and LLM nodes |
 | [home_grasp](https://github.com/HCIS-Lab/home-grasp.git) | main | Grasp action |
 | [home_speak](https://github.com/HCIS-Lab/home-speak.git) | main | Speak action |
-| [home_navigation](https://github.com/HCIS-Lab/home-navigation.git) | main | Navigate action |
+| [home_navigate](https://github.com/HCIS-Lab/home-navigate.git) | main | Navigate action |
 | [yolo_ros](https://github.com/HCIS-Lab/yolo_ros.git) | feature/image-compression | YOLO implementation for ROS |
 | [BehaviorTree.CPP](https://github.com/BehaviorTree/BehaviorTree.CPP.git) | 4.6.2 | Behavior tree C++ implementation |
 | [BehaviorTree.ROS2](https://github.com/BehaviorTree/BehaviorTree.ROS2.git) | humble | BehaviorTree.CPP ROS2 wrappers |

@@ -6,7 +6,7 @@ repositories:
   home_nlp:
     type: git
     url: git@github.com:HCIS-Lab/home-nlp.git
-    version: main
+    version: 1.0.1
   home_grasp:
     type: git
     url: git@github.com:HCIS-Lab/home-grasp.git
@@ -15,9 +15,9 @@ repositories:
     type: git
     url: git@github.com:HCIS-Lab/home-speak.git
     version: main
-  home_navigation:
+  home_navigate:
     type: git
-    url: git@github.com:HCIS-Lab/home-navigation.git
+    url: git@github.com:HCIS-Lab/home-navigate.git
     version: main
   yolo_ros:
     type: git
